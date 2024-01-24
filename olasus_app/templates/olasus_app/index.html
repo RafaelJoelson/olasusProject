@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>SUS - Santa Cruz de Minas</title>
+    <link rel="stylesheet" href="{% static 'olasus_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <h2>Sistema de Gestão em Saúde Pública de</h2>
+            <h1>São João Dos Queijos</h1>
+        </div>
+    </header>
+    <div class="container-prim">
+        <div class="container-sec">
+            <div class="logo-container">
+                <img src="{% static 'olasus_app/img/brasaoMunicipal.jpeg'%}" alt="">
+            </div>
+            <div class="login-container">
+                <div class="login-form">
+                    <h2>Por favor, realize o Login</h2>
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="id_username">Usuário:</label>
+                            <input type="text" name="username" id="id_username" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_password">Senha:</label>
+                            <input type="password" name="password" id="id_password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div>
+                <img src="{% static 'olasus_app/img/amogus.png'%}" alt="">
+            </div>
+            <div>
+                <ul><li>Links Importantes</li>
+                    <li><hr></li>
+                    <li>Fonte de inspiração</li>
+                    <li>Meu GitHub</li>
+                </ul>
+            </div>
+            <div>
+                <ul><li>Contatos</li>
+                    <li><hr></li>
+                    <li>Celular: (32)30030-30003</li>
+                    <li>Email: rafaeljoelsonifsudeste@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <h5>Desenvolvido por Rafael Joelson da Silva</h5>
+            <h5>Rua Resende Costa 67 - Santa Cruz de Minas - MG - CEP 36328000 CNPJ: 0001/3361132-69</h5>
+        </div>
+    </footer>
+    <script></script>
+</body>
+</html>
