@@ -47,7 +47,7 @@ Explicação sobre os principais arquivos e diretórios no seu projeto.
 3. Crie e ative um ambiente virtual com o Anaconda prompt (recomendado):
 
 	```bash
-    conda create --name pythonProject python=3.11
+    conda create --name pythonProject python=3.10
     conda activate pythonProject
     ```
 
