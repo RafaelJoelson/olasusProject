@@ -23,6 +23,5 @@ app_name = 'olasus_app'  # Defina o namespace aqui
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('olasus_app.urls')),
-    path('login/', views.login_view, name='login'),
     path('modulo_acs/', views.modulo_acs, name='modulo_acs'),
 ]
